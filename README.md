@@ -35,5 +35,14 @@ Here’s an example INSERT statement for the student table:
 INSERT INTO student (course_id, s_name, s_age, payment_state, payment_type)
 VALUES (2, 'Sam Toutounchi', 24, 'NOT_Confirmed', 'credit_cart');
 
+## Sample SQL Queries
+
+what is the count of students where the payment_satate is "confirmed" and the class's type is "online"
+SELECT COUNT(student_id)
+FROM student st
+JOIN class cl ON cl.course_id = st.course_id
+WHERE payment_state = "Confirmed"
+AND class_type = "online";
+
 
 
