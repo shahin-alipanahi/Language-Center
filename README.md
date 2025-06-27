@@ -27,17 +27,17 @@ This repository contains:
 
 ---
 
-## Sample Data Insertions
+## Sample Data Insertion and SQL Query 
 
-Here’s an example INSERT statement for the student table:
+Here’s an example:
 
 ```sql
+/*INSERT statement for the student table*/
 INSERT INTO student (course_id, s_name, s_age, payment_state, payment_type)
 VALUES (2, 'Sam Toutounchi', 24, 'NOT_Confirmed', 'credit_cart');
 
-## Sample SQL Queries
 
-what is the count of students where the payment_satate is "confirmed" and the class's type is "online"
+/*What is the count of students where the payment_satate is "confirmed" and the class's type is "online"*/
 SELECT COUNT(student_id)
 FROM student st
 JOIN class cl ON cl.course_id = st.course_id
