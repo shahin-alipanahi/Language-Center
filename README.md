@@ -23,7 +23,7 @@ The database schema consists of the following tables:
 This repository contains:
 
 - INSERT statements to populate the database with realistic test data
-- SQL queries to analyze student data and class information
+- SQL queries to analyze project functionality
 
 ---
 
